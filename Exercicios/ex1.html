@@ -5,24 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
 </head>
 <body>
     <h1>Titulo</h1>
     <p>Esse titulo só aparecerá quando passar pelo pop-up</p>
 
     <script>
-        alert('esse pop-up é apenas um aviso que o site ainda esta em construção')
-        confirm('você ainda quer entrar nesse site?')
-        let nome = prompt('seu nome?')
-        let idade = prompt('sua idade?')
-        let estado = prompt('seu estado?')
+        alert('Esse pop-up é apenas um aviso que o site ainda esta em construção')
+        confirm('Você ainda quer entrar nesse site?')
+        let nome = prompt('Qual é seu nome?')
+        let idade = prompt('Qual é a sua idade?')
+        let estado = prompt('Qual o seu pais?')
 
 
-        alert(`bom vamos entao continuar senhor ${nome}`)
+        alert(`Bom, então, vamor continuar senhor, ${nome}`)
 
         document.write(`Nome: ${nome} <br>`)
-        document.write(`Idade: ${idade} <br>`)
-        document.write(`Estado: ${estado}`)
+        document.write(`Idade: ${idade} anos <br>`)
+        document.write(`Estado: ${estado.toUpperCase()} <br>`)
+
+        document.write(`Seu nome tem exatamente ${nome.length} letras (espaço conta com caracteres)`)
 
     </script>
 </body>
