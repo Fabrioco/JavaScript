@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando JS</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quas cupiditate, voluptas modi ut animi reprehenderit repellat ad id! Ad maxime molestiae inventore veritatis reprehenderit doloremque deleniti mollitia blanditiis ex?</p>
+
+    <input id="b1" type="number"> + 
+    <input id="b2" type="number">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <script>
+        function somar(){
+            let num1 = window.document.getElementById('b1')
+            let num2 = window.document.getElementById('b2')
+            let res = window.document.getElementById('res')
+            let n1 = Number(num1.value)
+            let n2 = Number(num2.value)
+            let s = n1 + n2
+            res.innerHTML = `A soma deu ${s}`
+        }
+
+    </script>
+</body>
+</html>
