@@ -9,16 +9,15 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #949BA6;
+    background-color: #b1b8c3;
     
 }
 header{
-    background-image: linear-gradient(to top, #BFCAD9,#404040);
+    background-image: linear-gradient(to bottom, #667173,#4F5759);
     box-shadow: 5px 5px 5px rgba(44, 44, 44, 0.467);
     padding: 25px;
     text-align: center;
     text-decoration: underline;
-    
 }
 
 header h1{
@@ -31,14 +30,15 @@ header p {
 }
 
 main{
-    margin: 10px;
-    background-color: #0D0D0D;
+    margin: 10px 250px 10px 250px;
+    background-color: #5a6061;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(44, 44, 44, 0.467);
+    padding-bottom: 10px;
 }
 
 main h1{
-    background-color: #591521;
+    background-color: #6AD986;
     color: white;
     text-indent: 20px;
     border-top-left-radius: 5px;
@@ -47,32 +47,47 @@ main h1{
 }
 
 article > h2 {
-    background-color: #591521;
+    background-color: #343E40;
     color: white;
-    margin: 10px 0 0px 0;
-    box-shadow: 2px 2px 2px rgba(44, 44, 44, 0.467);
+    margin: 10px 0 5px 0;
+    box-shadow: 5px 5px 5px rgba(44, 44, 44, 0.467);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
     text-indent: 5px;
 }
 
+
 article a{
-    color: white;
+    color: rgba(255, 255, 255, 0.623);
 }
-article > img{
+
+video{
+    width: 500px;
+    height: 250px;
+    margin: auto;
     display: flex;
-    justify-items: center;
+    justify-items: end;
 }
+
 aside{
+    background-color: #4F5759;
     color: rgba(255, 255, 255, 0.63);
     font-size: 1.2em;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 10px;
+    margin: 0 300px 10px 300px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 aside h2{
-    background-color: #591521;
+    background-color: #343E40;
     color: rgb(255, 255, 255);
     margin: 10px 0 10px 0;
-    box-shadow: 2px 2px 2px rgba(44, 44, 44, 0.467);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(44, 44, 44, 0.609);
+    text-indent: 10px;
 }
 
 aside p{
@@ -88,4 +103,5 @@ footer{
     color: white;
     margin: 0;
     text-align: center;
+    padding: 10px;
 }
