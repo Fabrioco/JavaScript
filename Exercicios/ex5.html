@@ -25,7 +25,9 @@
             background-color: white;
             color: black;
         }
-
+        #texto{
+            display: none;
+        }
     </style>
 </head>
 <body id="escuro">
@@ -40,6 +42,11 @@
     <p>Escolha o modo</p>
     <input type="button" value="Escuro" onclick="escuro()" style="display: block;">
     <input type="button" value="Claro" onclick="claro()" style="display: block;">
+
+    <p id="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores, qui? Doloribus earum ab expedita minima! In aperiam voluptatem laborum. Asperiores nihil enim assumenda laudantium eius inventore, minus id voluptas repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sint quia consequuntur aliquam aliquid fugiat molestiae voluptatem! Repellat facere officiis sequi nemo repudiandae nobis deserunt, nihil provident, aperiam vero dolore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis atque minus necessitatibus magni id, nam quas laborum delectus eaque. Modi doloremque alias voluptatibus soluta possimus sapiente fuga reiciendis et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A provident ducimus asperiores quod laborum sint vel labore eius rem ullam iure sed, praesentium, ex tempore nulla. Aut sequi dicta voluptatum.</p>
+
+    <input type="button" value="Aparecer texto" onclick="mostrar()">
+    <input type="button" value="Esconder texto" onclick="esconder()">
 
     <script>
         function azul(){
@@ -63,6 +70,14 @@
             let b = document.getElementById('escuro')
             b.style.background = 'white'
             b.style.color = 'black'
+        }
+        function mostrar(){
+            let txt = document.getElementById('texto')
+            txt.style.display = 'block'
+        }
+        function esconder(){
+            let txt = document.getElementById('texto')
+            txt.style.display = 'none'
         }
     </script>
 </body>
