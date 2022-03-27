@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 16px arial;
+        }
+        h1{
+            width: 150px;
+            padding: 10px;
+        }
+        input{
+            padding: 10px;
+            border-radius: 3px;
+            background-color: black;
+            color: white;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.431);
+            margin: 10px;
+        }
+        input:active{
+            background-color: white;
+            color: black;
+        }
+
+    </style>
+</head>
+<body id="escuro">
+    <h1 id="cores">Titulo</h1>
+    <p>Escolha a cor do fundo do titulo</p>
+
+    <input type="button" value="Azul" onclick="azul()" >
+    <input type="button" value="Vermelho" onclick="vermelho()" >
+    <input type="button" value="Verde" onclick="verde()" >
+
+
+    <p>Escolha o modo</p>
+    <input type="button" value="Escuro" onclick="escuro()" style="display: block;">
+    <input type="button" value="Claro" onclick="claro()" style="display: block;">
+
+    <script>
+        function azul(){
+            let a = document.getElementById('cores')
+            a.style.background = 'blue'
+        }
+        function vermelho(){
+            let v = document.getElementById('cores')
+            v.style.background = 'red'
+        }
+        function verde(){
+            let v2 = document.getElementById('cores')
+            v2.style.background = 'green'
+        }
+        function escuro(){
+            let b = document.getElementById('escuro')
+            b.style.background = '#232424'
+            b.style.color = 'white'
+        }
+        function claro(){
+            let b = document.getElementById('escuro')
+            b.style.background = 'white'
+            b.style.color = 'black'
+        }
+    </script>
+</body>
+</html>
