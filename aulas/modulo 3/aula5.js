@@ -35,6 +35,4 @@ switch(diaSem){
     default:
         console.log('[ERRO] Dia invalido')
         break
-    
-    
     }

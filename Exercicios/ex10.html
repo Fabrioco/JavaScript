@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="hora" id="hora">
+    <input type="button" value="Verficar" onclick="clicar()">
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            var h = document.getElementById('hora')
+            var h = Number(hora.value)
+
+            if (h >= 5 && h < 1){
+                res.innerHTML = 'Bom dia'
+            } else if(h >= 12 && h < 19){
+                res.innerHTML = 'Boa tarde'
+            } else {
+                res.innerHTML = 'Boa noite'
+            }
+        }
+    </script>
+</body>
+</html>
