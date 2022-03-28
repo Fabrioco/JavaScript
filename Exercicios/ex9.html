@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleição</title>
+</head>
+<body>
+    <h1>Quer votar?</h1>
+    <p>Saiba agora</p>
+    <input type="number" name="txt" id="idade">
+    <input type="button" value="Verificar" onclick="clicar()">
+
+    <div id="res"></div>
+    <script>
+        function clicar(){
+            var t1 = document.getElementById('idade')
+            var res = document.getElementById('res')
+            var t1 = Number(idade.value)
+
+            if (t1 < 16){
+                res.innerHTML = `não vota`
+            } else if (t1 < 18 || t1 >= 65) {
+                res.innerHTML = `voto opcional`
+            } else {
+                res.innerHTML = 'voto obrigatório'
+            }
+        }
+    </script>
+</body>
+</html>
