@@ -1,4 +1,4 @@
-var valores = [9,3,5,4,7,1,8,6]
+var valores = [9, 3, 5, 4, 7, 1, 8, 6]
 valores.sort()
 /*console.log(`Aqui estao os seu valores: ${valores}`)
 valores.sort()
@@ -12,5 +12,5 @@ var pos = valores.indexOf(9)
 console.log(`O valor 9 esta na posição ${pos}`)*/
 
 for(var pos in valores){
-    console.log(`O valor ${pos} esta na posição ${valores}`)
+    console.log(`O valor ${pos} esta na posição ${valores[pos]}`)
 }
