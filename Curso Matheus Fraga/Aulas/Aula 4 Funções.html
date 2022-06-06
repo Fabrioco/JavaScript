@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+</head>
+<body>
+    
+    <div id="area">
+        Bem vindo ...
+        <br/>
+        <br />
+    </div>
+        <button onclick="Entrar()">
+            Entrar
+        </button>
+        <br />
+        <br/>
+        <button onclick="reload()" id="reload">
+            Recarregar pagina
+        </button>
+        <br />
+        <br />
+        <br />
+        <!--  Segundo metodo  -->
+
+        <div id="area2">
+            Bem vindo ...
+            <br/>
+            <br />
+        </div>
+            <button onclick="Entrar2('fabricio')">
+                Entrar
+            </button>
+            <br /><br /><br />
+    <!--                                        ATIVIDADE                                             -->
+
+            <div id="ativ">
+                <p><strong>Bem vindo</strong></p>
+                <p id="year"></p>
+                <button onclick="Enviar()">Enviar</button>
+            </div>
+
+
+    <script>
+        // função entrar
+        function Entrar(){
+            var area = document.getElementById('area');
+            var text = prompt('Digite seu nome');
+            
+            if(text.length == 0){
+                alert("Digite seu nome")
+                area.innerHTML = "Bem vindo ..."
+            } else {
+                area.innerHTML = text;
+            }
+        }
+        // função atualizar
+        function reload(){
+            var reload = document.querySelector('#reload')
+            reload.addEventListener('click', function(){
+                location.reload();
+            })
+        }
+
+        //  SEGUNDO METODO ----------------------------------------------------------
+
+        function Entrar2(nome) {
+            var area = document.getElementById('area2');
+            var text = prompt('Digite seu sobrenome');
+            area.innerHTML = nome + " " + text
+        }
+
+        //                                          ATIVIDADE
+
+        function Enviar(){
+            var idade = prompt('Digite sua idade')
+
+            if(idade == ''){
+                alert('Digite sua idade novamente')
+            } else {
+                year.innerHTML = "Voce tem " + idade + " anos"
+            }
+        }
+    </script>
+</body>
+</html>
