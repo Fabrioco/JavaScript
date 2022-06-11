@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7</title>
+</head>
+<body>
+    
+
+    <script>
+        document.write("<br/> Escolha seu pedido <br/>")
+        document.write("<br/> 0 - Sorvete / 1 - Suco <br/>")
+        document.write("<br/> 2 - Coca cola / 3 Agua gelada <br/>")
+        //Switch
+        
+
+    function pedir(){
+        x = prompt('O que deseja pedir?');
+
+
+    switch(x) {
+
+        case "0":
+            alert("Sorvete foi adicionado ao carrinho");
+            break;
+        case "1":
+            alert("Suco foi adicionado ao carrinho");
+            break;
+        case "2":
+            alert("Coca cola foi adicionado ao carrinho");
+            break;
+        case "3":
+            alert("Agua gelada foi adicionado ao carrinho");
+            break;
+        default:
+            alert("ops nao temos essa opçao");
+            break;
+    }
+    }
+    </script>
+    <button onclick="pedir()">Fazer Pedido</button>
+</body>
+</html>
